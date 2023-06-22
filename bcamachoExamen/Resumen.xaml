@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bcamachoExamen.Resumen">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="Beige"></Setter>
+                <Setter Property="TextColor" Value="Blue"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblusuario" FontSize="14" TextColor="Red" HorizontalTextAlignment="End" />
+            <Label Text="Resumen" FontSize="25" HorizontalTextAlignment="Center"></Label>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Nombre" FontSize="24" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="0"></Label>
+                <Label Text="Apellido" FontSize="24" HorizontalTextAlignment="Start" Grid.Row="1" Grid.Column="0"></Label>
+                <Label Text="Edad" FontSize="24" HorizontalTextAlignment="Start" Grid.Row="2" Grid.Column="0"></Label>
+                <Label Text="Fecha" FontSize="24" HorizontalTextAlignment="Start" Grid.Row="3" Grid.Column="0"></Label>
+                <Label Text="Pais" FontSize="24" HorizontalTextAlignment="Start" Grid.Row="4" Grid.Column="0"></Label>
+                <Label Text="Ciudad" FontSize="24" HorizontalTextAlignment="Start" Grid.Row="5" Grid.Column="0"></Label>
+                <Label Text="Monto Inicial" FontSize="24" HorizontalTextAlignment="Start" Grid.Row="6" Grid.Column="0"></Label>
+                <Label Text="Pago Mensual" FontSize="24" HorizontalTextAlignment="Start" Grid.Row="7" Grid.Column="0"></Label>
+                <Label Text="Pago Total" FontSize="24" HorizontalTextAlignment="Start" Grid.Row="8" Grid.Column="0"></Label>
+
+                <Entry x:Name="txtNombre" Placeholder="Ingrese Usuario" Grid.Row="0" Grid.Column="1"></Entry>
+                <Entry x:Name="txtApellido" Placeholder="Contrasena" Grid.Row="1" Grid.Column="1"></Entry>
+                <Entry x:Name="txtEdad" Placeholder="Contrasena" Grid.Row="2" Grid.Column="1"></Entry>
+                <Entry x:Name="txtFecha" Placeholder="Contrasena" Grid.Row="3" Grid.Column="1"></Entry>
+                <Entry x:Name="txtPais" Placeholder="Contrasena" Grid.Row="4" Grid.Column="1"></Entry>
+                <Entry x:Name="txtCiudad" Placeholder="Contrasena" Grid.Row="5" Grid.Column="1"></Entry>
+                <Entry x:Name="txtMontoI" Placeholder="Contrasena" Grid.Row="6" Grid.Column="1"></Entry>
+                <Entry x:Name="txtMontoM" Placeholder="Contrasena" Grid.Row="7" Grid.Column="1"></Entry>
+                <Entry x:Name="txtPagoF" Placeholder="Contrasena" Grid.Row="8" Grid.Column="1"></Entry>
+
+            </Grid>
+            <Button x:Name="btnSalir" Text="SALIR" Clicked="btnSalir_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
